@@ -1,0 +1,382 @@
+:root {
+  --orange: #ff900e;
+  --banner_bg: rgba(255, 144, 14, 0.1);
+  --paragraph: #727272;
+  --white: #ffffff;
+}
+
+/* ----------------------------------
+            Google fonts
+------------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.padding_left_right {
+  padding: 0 12.5rem;
+}
+header {
+  background: var(--banner_bg);
+}
+
+/* ------------------------------------
+                Nav section style
+----------------------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 2.81rem;
+  line-height: 3.31rem;
+  color: #131313;
+}
+.nav-item {
+  display: flex;
+  gap: 5rem;
+}
+.nav-item a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.12rem;
+  line-height: 1.62rem;
+  color: #424242;
+}
+/* ------------------------------------
+            Banner description style
+---------------------------------------*/
+.banner-descriptin {
+  text-align: center;
+  width: 44.89%;
+  margin: auto;
+}
+.banner_heading {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.68rem;
+  color: #131313;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.banner_prg,
+.feature_info_pg,
+.single_card_pg,
+.container_pg,
+.some_facts_pg,
+.information_card p,
+.our_sponspors_pg,
+.my_own_ingormation_pg {
+  padding-top: 0.6rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.62rem;
+  color: var(--paragraph);
+}
+.primary_btn {
+  background: var(--orange);
+  padding: 1.31rem 1.56rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.43rem;
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+}
+/* -------------------------
+    banner image
+--------------------------*/
+.banner_img {
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+.banner_img img {
+  width: 95%;
+}
+
+/* --------------------------------
+Quick list of Our Features
+------------------------------------ */
+.our_features {
+  display: flex;
+  justify-content: space-around;
+  padding: 4.42% 15.67% 6.77% 15.67%;
+  align-items: center;
+  gap: 73px;
+}
+.features_img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.feature_ifo_heading {
+  font-weight: 700;
+  font-size: 2.82rem;
+  line-height: 3.31rem;
+}
+
+/* ---------------------------------------------
+    Features you will love & enjoy
+--------------------------------------------------*/
+.container {
+  display: flex;
+  gap: 54px;
+}
+.container_pg {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container_header,
+.some_facts_header,
+.our_sponspors_header,
+.my_own_information_header {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: #131313;
+}
+.container_header {
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+  margin-bottom: 24px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.single_card {
+  width: 36.62rem;
+  height: 10.25rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+article {
+  padding: 2rem;
+}
+.single_card_header {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.43rem;
+  color: #131313;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.single_card_pg {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container_img_section {
+  position: relative;
+}
+/* -------------------------------------
+      Experience button style
+------------------------------------------*/
+.experience {
+  position: absolute;
+  left: -3rem;
+  bottom: 0.3rem;
+  background: var(--orange);
+  border-radius: 8px;
+  width: 21.37rem;
+  margin: auto;
+  text-align: center;
+}
+.experience_info {
+  padding: 46px;
+}
+.experience .experience_info h1 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.experience .experience_info p {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* --------------------------------------
+    Some Facts style
+------------------------------------------*/
+.some_facts {
+  margin-top: 130px;
+}
+.some_facts_pg {
+  width: 542px;
+}
+/* ---------------------------------------
+      our information section style
+------------------------------------------*/
+.our_information_section {
+  display: flex;
+  justify-content: space-around;
+}
+.information_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 241.83px;
+  height: 241.83px;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  transition-duration: 3s;
+}
+.information_card:hover {
+  transform: rotate(90deg);
+  background: var(--orange);
+  color: var(--white);
+}
+.information_card h3 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.information_card p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* -----------------------------------
+      our Sponspors section style
+---------------------------------------- */
+.our_sponspors {
+  margin-top: 180px;
+  text-align: center;
+}
+.our_sponspors_header {
+  margin-bottom: 24px;
+  margin-top: 0px;
+}
+.our_sponspors_pg {
+  margin: auto;
+  width: 542px;
+}
+.sponsors_section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  -webkit-filter: grayscale(100%);
+}
+/* -------------------------------------
+    My own information
+-------------------------------------------*/
+.my_own_information {
+  margin-top: 100px;
+  text-align: center;
+}
+.my_own_info {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  align-items: center;
+}
+.my_own_information_img {
+  -webkit-filter: grayscale(100%);
+}
+.my_own_ingormation_pg {
+  width: 50%;
+}
+/* -------------------------------
+    footer style
+------------------------------*/
+footer {
+  margin-top: 100px;
+  background: #fff4e7;
+  border-radius: 8px;
+}
+footer p {
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #424242;
+}
+
+/* ---------------------------------
+
+------------------------------------*/
+@media screen and (max-width: 576px) {
+  .banner-descriptin {
+    width: 100%;
+  }
+  nav,
+  .nav-item,
+  .container,
+  .my_own_info,
+  .our_features {
+    flex-direction: column;
+  }
+  nav {
+    padding: 0;
+  }
+  .project-title,
+  .banner_heading {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.81rem;
+    margin-bottom: 0px;
+    line-height: 35px;
+  }
+  .nav-item {
+    justify-content: space-evenly;
+    gap: 2px;
+  }
+  .features_img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .padding_left_right {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .single_card {
+    width: 100%;
+    height: auto;
+  }
+  .container_img_section img {
+    width: 100%;
+  }
+  .our_information_section {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .information_card {
+    margin: auto;
+  }
+  .sponsors_section {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .some_facts_header,
+  .some_facts_pg,
+  .container_pg {
+    text-align: center;
+  }
+  .some_facts_pg,
+  .our_sponspors_pg {
+    width: 100%;
+  }
+  .experience {
+    position: static;
+  }
+}
